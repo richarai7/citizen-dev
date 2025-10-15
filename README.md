@@ -4,7 +4,7 @@ An accelerated repository template for citizen developers to quickly build and d
 
 ## 🎯 Purpose
 
-This template is designed for business users (like Flynn from the business team) who need to create serverless functions for processing data, such as CSV files uploaded to Azure Storage. It provides a ready-to-use Azure Function App with HTTP triggers and CI/CD pipelines.
+This template is designed for business users (like Alice from the business team) who need to create serverless functions for processing data, such as CSV files uploaded to Azure Storage. It provides a ready-to-use Azure Function App with HTTP triggers and CI/CD pipelines.
 
 ## 📁 Project Structure
 
@@ -46,7 +46,7 @@ func start
 ### 3. Test the Functions
 ```bash
 # Test the basic HTTP trigger
-curl "http://localhost:7071/api/http_trigger?name=Flynn"
+curl "http://localhost:7071/api/http_trigger?name=Alice"
 
 # Test the CSV processing trigger
 curl -X POST "http://localhost:7071/api/process_csv" \
@@ -65,7 +65,7 @@ curl -X POST "http://localhost:7071/api/process_csv" \
 - **Endpoint**: `/api/process_csv`
 - **Method**: POST
 - **Purpose**: Process CSV data and return statistics
-- **Use Case**: When Flynn uploads a CSV to storage, this function validates, processes, and returns summary data
+- **Use Case**: When Alice uploads a CSV to storage, this function validates, processes, and returns summary data
 
 ## 📚 Documentation
 
@@ -97,7 +97,7 @@ GitHub Actions workflow automatically:
 
 ## 🎓 Example Scenario
 
-Flynn, a business analyst, needs to process sales data:
+Alice, a business analyst, needs to process sales data:
 1. Creates a CSV with columns: id, name, amount, category
 2. Uses the `/api/process_csv` endpoint to validate and analyze data
 3. Receives JSON response with totals, averages, and category breakdown
